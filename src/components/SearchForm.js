@@ -12,8 +12,8 @@ export class SearchFrom extends Component {
   _handleSubmit = (e) => {
     e.preventDefault()
     const {inputMovie} = this.state
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
-      .then(res => res.json())
+    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`) //fetch will call an API and get the data
+      .then(res => res.json()) // we neeed to convert it into a json file to handle the info better
       .then (results => {
         const { Search, totalResults } = results
         console.log( {Search, totalResults})

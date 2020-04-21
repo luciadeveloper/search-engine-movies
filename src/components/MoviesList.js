@@ -4,11 +4,11 @@ import { Movie } from './Movie'
 
 export class MoviesList extends Component {
   static propTyps = {
-    movies: PropTypes.array
+    movies: PropTypes.array //defines that movies should be an array
   }
   render() {
    
-      const { movies } = this.props
+      const { movies } = this.props //adds the props into a constant, to handle it better
 
       return (
         <div className='MoviesList'>

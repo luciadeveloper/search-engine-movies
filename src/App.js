@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import {Title} from './components/Title'
 import {SearchFrom} from './components/SearchForm'
 import { MoviesList } from './components/MoviesList'
@@ -8,10 +9,10 @@ import 'bulma/css/bulma.css'
 
 
 class App extends Component {
-  state = { results: [] }
+  state = { results: [] } // state initialized to an empty array
 
   _handleResults = (results) => {
-    this.setState({ results })
+    this.setState({ results }) //sets state to results when the form gets input
   }
  
   
@@ -24,7 +25,7 @@ class App extends Component {
           <SearchFrom onResults={this._handleResults}/>
         </div>
         {this.state.results.length === 0
-        ? <p>Sin resultados</p>
+        ? <p>No resutls</p>
         : <MoviesList movies= {this.state.results}/>
         }
       </div>
