@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+Project by Lucia Developer to practice React JS skills. 
+Intermediate level
+
 ## Available Scripts
 
 In the project directory, you can run:
